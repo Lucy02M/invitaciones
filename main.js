@@ -41,7 +41,7 @@ function togglePlay() {
   let imgAudio = document.getElementById("audioImg");
   let mySrc = imgAudio.getAttribute("src");
   if (mySrc === "volume-up.png") {
-    imgAudio.setAttribute("src", "silent.png");
+    imgAudio.setAttribute("src", "mute.png");
   } else {
     imgAudio.setAttribute("src", "volume-up.png");
   }
