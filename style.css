@@ -1,9 +1,10 @@
 :root {
-  --gray:#D8E2DC;
-  --white:#FFE5D9;
-  --pink:#FFCAD4;
-  --dark-pink:#F4ACB7;
-  --violet:#9D8189;
+  --darkrose: #6B2D32;
+  --midrose: #ED7474;
+  --lightrose: #FFD2D1;
+  --lightgreen: #DDFFB3;
+  --midgreen: #8DA070;
+  --darkgreen: #384731;
 }
 
 /*characters images
@@ -74,11 +75,11 @@
 /*front section*/
 
 #portada {
-  background:var(--dark-pink);
+  background: var(--midrose);
 }
 
-#portadaDiv {
-  margin-top: 0.5vh;
+#portada .content {
+  margin-top: -1em;
 }
 
 #foto {
@@ -87,24 +88,29 @@
   filter: contrast(40%);
   filter: brightness(130%);
   filter: saturate(1.5);
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 0;
 }
 
 #portada h1 {
-  color: var(--violet);
-  font-size: 2.7em;
+  color: var(--lightrose);
+  font-size: 3em;
   font-weight: 500;
+  margin-top: 0vh;
+  border-radius: 20px;
+  position: relative;
 }
 
 #portada h2 {
   font-weight: 500;
-  color: var(--white)
+  color: var(--lightgreen);
+  margin-bottom: 0;
 }
 
 #demo {
-  background-color: var(--violet);
-  color: var(--gray);
+  background-color: var(--lightgreen);
+  color: var(--midrose);
   margin: 0;
   padding: 0.5em;
   border-radius: 20px;
@@ -113,6 +119,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
 }
 
 #audioDiv {
@@ -129,30 +136,30 @@
 }
 
 #audioBtn {
-  background-color: var(--violet);
+  background-color: var(--midrose);
   margin: 0px 0 0 5px;
   padding: 0.7em;
   border-radius: 50%;
   border: none;
-  box-shadow: -9px 10px 11px -8px rgba(26, 22, 22, 0.81);
+  box-shadow: -9px 10px 11px -8px var(--darkrose);
   animation: buttonColor 2s linear 0s 3 normal;
 }
 
 #audioBtn:active {
-  box-shadow: -9px 10px 11px -8px rgba(157, 129, 137, 0.81);
-  background-color: var(--pink);
+  box-shadow: -9px 10px 11px -8px var(--lightrose);
+  background-color: var(--midrose);
 }
 
 @keyframes buttonColor {
   0% {
-    box-shadow: -9px 10px 11px -8px rgba(26, 22, 22, 0.81);
+    box-shadow: -9px 10px 11px -8px var(--darkrose);
   }
   50% {
-    box-shadow: -9px 10px 11px -8px rgba(157, 129, 137, 0.81);
-    background-color: var(--pink);
+    box-shadow: -9px 10px 11px -8px var(--midrose);
+    background-color: var(--lightrose);
   }
   100% {
-    box-shadow: -9px 10px 11px -8px rgba(26, 22, 22, 0.81);
+    box-shadow: -9px 10px 11px -8px var(--darkrose);
   }
 }
 
@@ -163,11 +170,11 @@
 /*address section*/
 
 #direccion {
-  background-color: var(--gray);
+  background-color: var(--midgreen);
 }
 
 #direccion p {
-  color: var(--violet);
+  color: var(--lightgreen);
   font-size: 1.5em;
   line-break: auto;
   padding: 1em;
@@ -176,23 +183,24 @@
 /*party section*/
 
 #fiesta {
-  background-color: var(--pink);
+  background-color: var(--lightrose);
+  padding-top: 5vh;
 }
 
 #fiesta * {
   font-weight: 100;
-  color: var(--white);
+  color: var(--lightrose);
 }
 
 .fiesta {
-  background-color: rgba(157, 129, 137, 0.71);
+  background-color: rgba(107, 45, 50, 0.6);
   padding: 0.3em;
   border-radius: 20%;
-  margin-top:1vh;
+  margin-top: 3vh;
 }
 
 .fiesta p {
-  color: var(--gray) !important;
+  color: var(--lightgreen) !important;
 }
 
 .fiesta h3 {
@@ -204,9 +212,10 @@
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: var(--darkgreen);
   margin: 10px 0 10px 0;
   gap: 0.5em;
+  font-size: 0.7em;
 }
 
 #copy:active {
@@ -215,21 +224,19 @@
 
 #remove {
   border: none;
-  background-color: var(--violet);
-  color: white !important;
+  background-color: var(--darkrose);
+  color: var(--lightrose) !important;
   font-weight: 100;
   padding: 7px 10px;
   border-radius: 5px;
 }
 
-#gimgDiv{
+#gimgDiv {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-
-
 
 #click {
   animation: click 2s ease 0s infinite normal forwards;
@@ -289,10 +296,10 @@
 /*gallery section*/
 
 #galeria {
-  background-color: var(--violet);
+  background-color: var(--darkrose);
   height: auto;
   padding: 1em;
-  color: var(--pink);
+  color: var(--lightgreen);
 }
 
 #galeria *,
@@ -313,7 +320,7 @@
   filter: contrast(40%);
   filter: brightness(130%);
   filter: saturate(1.5);
-  border: 5px dotted var(--gray);
+  border: 5px dotted var(--lightrose);
   animation: shake 2s ease 0s infinite normal forwards;
 }
 
@@ -366,7 +373,7 @@
 /*confirm section*/
 
 #asistencia {
-  background:var(--dark-pink);
+  background: var(--midgreen);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
@@ -377,12 +384,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--white);
+  background-color: var(--lightgreen);
   height: 90vh;
   border-radius: 20px;
-  border: 10px dotted var(--violet);
+  border: 10px dotted var(--midrose);
   padding: 1em;
-  color: var(--violet);
+  color: var(--darkrose);
 }
 
 #asistencia button {
@@ -392,14 +399,14 @@
   margin: 1em;
   gap: 1em;
   padding: 1em;
-  background-color: var(--violet);
+  background-color: var(--midrose);
   border: none;
   border-radius: 10px;
 }
 
 #confirmA {
   text-decoration: none;
-  color: var(--pink);
+  color: var(--lightrose);
   font-size: 1.5em;
 }
 
@@ -410,8 +417,11 @@
 }
 
 #mensaje {
-  margin-top: -4em;
   padding: 2em;
+}
+
+#endImg {
+  margin-top: 10vh;
 }
 
 /*general*/
@@ -419,8 +429,8 @@
 .section {
   height: 100vh;
   margin: 0;
-  padding: 10px 0;
-  border-bottom: 15px dashed var(--white);
+  padding: 0;
+  border-bottom: 15px dashed var(--lightgreen);
 }
 
 body {
@@ -432,7 +442,7 @@ body {
 
 * {
   text-align: center;
-  font-family: 'Sofia', cursive;
+  font-family: "Sofia", cursive;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -441,13 +451,12 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .section
-  { display: flex;
+  .section {
+    display: flex;
     align-items: center;
     justify-content: center;
     background: url("media/fondo.jpg");
@@ -455,7 +464,7 @@ body {
     background-size: cover;
     overflow: hidden;
   }
-  .content{
+  .content {
     width: 50vw;
     padding: 3vw 5vw;
     border-radius: 5em;
@@ -466,24 +475,23 @@ body {
     height: 100vh;
   }
 
-
-  #portada .content{
-    background:var(--white);
+  #portada .content {
+    background: var(--white);
   }
 
-  #direccion .content{
-    background:var(--dark-pink);
+  #direccion .content {
+    background: var(--dark-pink);
   }
 
-  #galeria .content{
-    background:var(--gray);
+  #galeria .content {
+    background: var(--gray);
   }
 
-  #fiesta .content{
+  #fiesta .content {
     background: var(--pink);
   }
 
-  #asistencia .content{
+  #asistencia .content {
     background: var(--violet);
   }
 
@@ -491,11 +499,11 @@ body {
     width: 25vw;
   }
 
-  #audioDiv{
+  #audioDiv {
     align-self: flex-start;
   }
 
-  .fiesta{
+  .fiesta {
     width: 25vw;
     padding: 2vw;
   }
@@ -509,22 +517,22 @@ body {
   #kitty {
     height: 20vh;
   }
-  
+
   #melody {
     height: 28vh;
     margin-top: 0vh;
   }
 
-  #mensaje{
+  #mensaje {
     margin-top: 8vh;
     margin-bottom: 0;
   }
 
-  #portada h1{
+  #portada h1 {
     font-size: 3em;
   }
 
-  #portada h2{
+  #portada h2 {
     font-size: 2em;
   }
 
@@ -532,15 +540,15 @@ body {
     font-size: 2em;
   }
 
-  .fiesta h3{
+  .fiesta h3 {
     font-size: 2em;
   }
 
-  .fiesta p{
+  .fiesta p {
     font-size: 1.5em;
   }
 
-  .content h2{
+  .content h2 {
     font-size: 2.5em;
   }
 }
