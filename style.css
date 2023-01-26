@@ -1,10 +1,9 @@
 :root {
-  --darkrose: #6B2D32;
-  --midrose: #ED7474;
-  --lightrose: #FFD2D1;
-  --lightgreen: #DDFFB3;
-  --midgreen: #8DA070;
-  --darkgreen: #384731;
+  --one: #F7F2F4;
+  --two: #E6C3CF;
+  --three: #997984;
+  --four: #262123;
+  --five: #121011;
 }
 
 /*characters images
@@ -75,7 +74,7 @@
 /*front section*/
 
 #portada {
-  background: var(--midrose);
+  background: var(--two);
 }
 
 #portada .content {
@@ -91,28 +90,29 @@
   width: 20rem;
   height: 20rem;
   margin-bottom: 0;
+  margin-top: -1em;
 }
 
 #portada h1 {
-  color: var(--lightrose);
+  color: var(--four);
   font-size: 3em;
   font-weight: 500;
-  margin-top: 0vh;
+  margin-top: -5vh;
   border-radius: 20px;
   position: relative;
 }
 
 #portada h2 {
   font-weight: 500;
-  color: var(--lightgreen);
+  color: var(--four);
   margin-bottom: 0;
 }
 
 #demo {
-  background-color: var(--lightgreen);
-  color: var(--midrose);
+  background-color: var(--three);
+  color: var(--one);
   margin: 0;
-  padding: 0.5em;
+  padding: 0.3em;
   border-radius: 20px;
   transform: scale(0.9);
   font-size: 2em;
@@ -136,30 +136,30 @@
 }
 
 #audioBtn {
-  background-color: var(--midrose);
-  margin: 0px 0 0 5px;
+  background-color: var(--one);
+  margin: -5px 0 0 5px;
   padding: 0.7em;
   border-radius: 50%;
   border: none;
-  box-shadow: -9px 10px 11px -8px var(--darkrose);
+  box-shadow: -9px 10px 11px -8px var(--three);
   animation: buttonColor 2s linear 0s 3 normal;
 }
 
 #audioBtn:active {
-  box-shadow: -9px 10px 11px -8px var(--lightrose);
-  background-color: var(--midrose);
+  box-shadow: none;
+  background-color: var(--two);
 }
 
 @keyframes buttonColor {
   0% {
-    box-shadow: -9px 10px 11px -8px var(--darkrose);
+    box-shadow: -9px 10px 11px -8px var(--three);
   }
   50% {
-    box-shadow: -9px 10px 11px -8px var(--midrose);
-    background-color: var(--lightrose);
+    box-shadow: -9px 10px 11px -8px var(--two);
+    background-color: var(--onw);
   }
   100% {
-    box-shadow: -9px 10px 11px -8px var(--darkrose);
+    box-shadow: -9px 10px 11px -8px var(--three);
   }
 }
 
@@ -170,37 +170,56 @@
 /*address section*/
 
 #direccion {
-  background-color: var(--midgreen);
+  background-color: var(--three);
 }
 
 #direccion p {
-  color: var(--lightgreen);
+  color: var(--one);
   font-size: 1.5em;
   line-break: auto;
   padding: 1em;
 }
 
+#mapa{
+  border-top: 5px dotted var(--one);
+  border-bottom: 5px dotted var(--one);
+  padding-top: 5px;
+}
+
 /*party section*/
 
 #fiesta {
-  background-color: var(--lightrose);
+  background-color: var(--two);
+}
+
+#fiesta .content{
   padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
 }
 
 #fiesta * {
   font-weight: 100;
-  color: var(--lightrose);
+  color: var(--one);
 }
 
 .fiesta {
-  background-color: rgba(107, 45, 50, 0.6);
+  background-color: var(--three);
   padding: 0.3em;
   border-radius: 20%;
-  margin-top: 3vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px dotted var(--one);
 }
 
 .fiesta p {
-  color: var(--lightgreen) !important;
+  color: var(--two) !important;
 }
 
 .fiesta h3 {
@@ -212,10 +231,16 @@
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: var(--darkgreen);
-  margin: 10px 0 10px 0;
+  background-color: var(--four);
+  padding: 0;
+  margin: 1em;
+  width: 80vw;
   gap: 0.5em;
   font-size: 0.7em;
+}
+
+#copy{
+  filter: brightness(200%);
 }
 
 #copy:active {
@@ -224,8 +249,8 @@
 
 #remove {
   border: none;
-  background-color: var(--darkrose);
-  color: var(--lightrose) !important;
+  background-color: var(--one);
+  color: var(--four) !important;
   font-weight: 100;
   padding: 7px 10px;
   border-radius: 5px;
@@ -296,10 +321,10 @@
 /*gallery section*/
 
 #galeria {
-  background-color: var(--darkrose);
+  background-color: var(--three);
   height: auto;
   padding: 1em;
-  color: var(--lightgreen);
+  color: var(--two);
 }
 
 #galeria *,
@@ -320,7 +345,7 @@
   filter: contrast(40%);
   filter: brightness(130%);
   filter: saturate(1.5);
-  border: 5px dotted var(--lightrose);
+  border: 5px dotted var(--two);
   animation: shake 2s ease 0s infinite normal forwards;
 }
 
@@ -373,7 +398,7 @@
 /*confirm section*/
 
 #asistencia {
-  background: var(--midgreen);
+  background: var(--two);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2em;
@@ -384,12 +409,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--lightgreen);
+  background-color: var(--three);
   height: 90vh;
   border-radius: 20px;
-  border: 10px dotted var(--midrose);
+  border: 10px dotted var(--one);
   padding: 1em;
-  color: var(--darkrose);
+  color: var(--four);
 }
 
 #asistencia button {
@@ -399,14 +424,14 @@
   margin: 1em;
   gap: 1em;
   padding: 1em;
-  background-color: var(--midrose);
+  background-color: var(--two);
   border: none;
   border-radius: 10px;
 }
 
 #confirmA {
   text-decoration: none;
-  color: var(--lightrose);
+  color: var(--four);
   font-size: 1.5em;
 }
 
@@ -424,13 +449,24 @@
   margin-top: 10vh;
 }
 
+#messImg{
+  filter: brightness(40%);
+}
+
 /*general*/
 
 .section {
   height: 100vh;
   margin: 0;
   padding: 0;
-  border-bottom: 15px dashed var(--lightgreen);
+}
+
+.one{
+  border-bottom: 15px dotted var(--three);
+}
+
+.two{
+  border-bottom: 15px dotted var(--two);
 }
 
 body {

@@ -58,15 +58,22 @@ myAudio.onpause = function () {
 function regalar() {
   let regalo = document.getElementById("regalo");
   let pedirRegalo = document.getElementById("pedirRegalo");
+  let text = document.getElementById("giftTextRemove");
+  let giftCard = document.getElementById("giftCard");
+  giftCard.style.paddingBottom = "3vh";
   pedirRegalo.style.display = "flex";
   let clickImg = document.getElementById("click");
   clickImg.style.display = "none";
   regalo.style.marginLeft = "0em";
+  text.style.display = "none";
 }
 
 //hide gift
 function remove() {
+  let text = document.getElementById("giftTextRemove");
   pedirRegalo.style.display = "none";
+  text.style.display = "block";
+  giftCard.style.paddingBottom = "0";
 }
 
 //copy text button
