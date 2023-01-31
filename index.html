@@ -72,7 +72,7 @@
               <img
                 src="present.png"
                 alt=""
-                width="120"
+                width="100"
                 onclick="regalar()"
                 id="regalo"
               />
@@ -80,14 +80,9 @@
             </div>
             <div id="pedirRegalo">
               <p>CVU: <span id="cvu">00000000658364697193769</span></p>
-              <img
-                onclick="copyText()"
-                src="copy.png"
-                alt=""
-                height="30"
-                id="copy"
-              />
-              <button id="remove" onclick="remove()">x</button>
+              <div id="botones">
+              <p onclick="copyText()" id="copy">Copiar</p>
+              <p id="remove" onclick="remove()">Ocultar</p></div>
             </div>
           </div>
           <p class="descripcion" id="giftTextRemove">El regalo es obligatorio</p>

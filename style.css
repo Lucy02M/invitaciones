@@ -229,18 +229,31 @@
 #pedirRegalo {
   display: none;
   border-radius: 10px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--four);
   padding: 0;
   margin: 1em;
-  width: 80vw;
-  gap: 0.5em;
+  width: 35em;
+  max-width: 70vw;
   font-size: 0.7em;
+  margin-bottom: 0;
+}
+
+#botones{
+  margin-top: -1em;
+  display: flex;
+  gap: 40px;
 }
 
 #copy{
   filter: brightness(200%);
+  background-color: black;
+  padding: 1em;
+  border-radius: 10px;
+  width: 4em;
+  height: 1.2em;
 }
 
 #copy:active {
@@ -252,8 +265,10 @@
   background-color: var(--one);
   color: var(--four) !important;
   font-weight: 100;
-  padding: 7px 10px;
-  border-radius: 5px;
+  padding: 1em;
+  border-radius: 10px;
+  width: 4em;
+  height: 1.2em;
 }
 
 #gimgDiv {
