@@ -232,11 +232,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--four);
+  background: none;
   padding: 0;
-  margin: 1em;
-  width: 35em;
-  max-width: 70vw;
+  margin-top: 0;
+  width: 50em;
+  max-width: 90vw;
   font-size: 0.7em;
   margin-bottom: 0;
 }
@@ -249,7 +249,7 @@
 
 #copy{
   filter: brightness(200%);
-  background-color: black;
+  background-color: var(--four);
   padding: 1em;
   border-radius: 10px;
   width: 4em;
@@ -340,6 +340,7 @@
   height: auto;
   padding: 1em;
   color: var(--two);
+  width: auto;
 }
 
 #galeria *,
@@ -349,9 +350,18 @@
 
 #photos {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   gap: 1em;
+  flex-direction: column;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.gallerycont{
+  background-color: #121011 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .imagen {
@@ -544,6 +554,17 @@ body {
 
   #asistencia .content {
     background: var(--violet);
+  }
+  
+  #photos {
+    max-width: 500px;
+    flex-direction: row;
+    gap: 2em;
+  }
+  
+  .imagen {
+      width: 14em;
+      height: 14em;
   }
 
   #demo {

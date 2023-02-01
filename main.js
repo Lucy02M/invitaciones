@@ -60,7 +60,6 @@ function regalar() {
   let pedirRegalo = document.getElementById("pedirRegalo");
   let text = document.getElementById("giftTextRemove");
   let giftCard = document.getElementById("giftCard");
-  giftCard.style.paddingBottom = "3vh";
   pedirRegalo.style.display = "flex";
   let clickImg = document.getElementById("click");
   clickImg.style.display = "none";
